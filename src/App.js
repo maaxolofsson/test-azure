@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 function App() {
   const baseURL = "https://max-olofsson-backend-app.azurewebsites.net/";
