@@ -18,6 +18,14 @@ function App() {
 
   console.log(authors);
 
+  const test = async function () {
+    const res = await fetch(baseURL + "authors");
+    const data = await res.json();
+    console.log("Inside useEffect and get." + baseURL);
+    setAuthors(data.data);
+  }
+  test()
+
   const value = "World";
   return <div>Hello {value} v2</div>;
 }
